@@ -1,204 +1,248 @@
-#  Informe Técnico – Evaluación de Cumplimiento Normativo
+# Informe Técnico – Evaluación de Cumplimiento Normativo
 
 ## 1. Introducción
 
-El presente informe documenta el análisis de cumplimiento normativo realizado sobre el sistema operativo y tecnológico de **Bray Controls Andina**, empresa del sector industrial enfocada en la gestión de válvulas, automatización y procesos comerciales.
+El presente informe documenta el análisis de cumplimiento normativo realizado sobre el sistema operativo y tecnológico de Bray Controls Andina, empresa del sector industrial.
 
-El objetivo principal del taller fue evaluar el nivel de cumplimiento en aspectos legales, de seguridad de la información y operación, identificando brechas y riesgos asociados. Para ello, se tomaron como referencia marcos normativos y buenas prácticas como:
+El objetivo fue evaluar el nivel de cumplimiento en aspectos de seguridad, operación, datos personales y gobierno organizacional, a partir de información levantada directamente en entrevistas con responsables técnicos y del negocio.
 
-- Ley 1581 de 2012 (Protección de Datos Personales – Colombia)  
-- Principios de Habeas Data  
-- Estándar internacional ISO/IEC 27001  
-
-El análisis se centró en los procesos críticos del negocio, desde la gestión de órdenes de venta hasta el despacho de productos, permitiendo identificar debilidades estructurales y oportunidades de mejora.
+A diferencia de un enfoque teórico, este análisis se basa en evidencia real proporcionada por la organización, permitiendo identificar con mayor precisión fortalezas, brechas y riesgos.
 
 ---
 
-## 2. Contexto del sistema analizado
+## 2. Contexto organizacional y tecnológico
 
-El sistema evaluado soporta el flujo operativo principal de la organización:
+Bray Controls Andina opera bajo un modelo corporativo donde la gestión tecnológica está centralizada en la casa matriz ubicada en Houston (Estados Unidos).
 
-**Sales Order → Planeación → Compras → Inventario → Despacho**
+### Características clave:
 
-Este flujo involucra múltiples áreas y herramientas tecnológicas, siendo fundamentales para el cumplimiento de pedidos y la operación logística.
+- La gestión de IT y seguridad es responsabilidad del corporativo  
+- Existe soporte técnico local limitado  
+- Las decisiones tecnológicas no son completamente autónomas  
+- Se utilizan herramientas del ecosistema Microsoft  
 
-### Componentes principales:
+### Infraestructura:
 
-- ERP LN (gestión de órdenes, compras e inventario)  
-- Dynamics 365 (gestión comercial y cotizaciones)  
-- Microsoft Excel (soporte operativo y análisis)  
-- Sistemas de bodega (gestión física de inventario)  
-- Herramientas de comunicación (Outlook)  
+- Uso de servicios en la nube (Microsoft Azure)  
+- Servidores locales complementarios  
+- Correos y gestión de información en Outlook  
+- ERP y Dynamics para gestión de clientes y operación  
 
-Estos componentes presentan un nivel de integración funcional, pero con dependencia significativa de procesos manuales.
+Los datos se almacenan principalmente en:
+
+- ERP corporativo  
+- Microsoft Dynamics  
 
 ---
 
 ## 3. Metodología
 
-El desarrollo del taller se realizó en cinco etapas:
+El análisis se desarrolló mediante:
 
-1. Levantamiento de información mediante entrevistas y observación de procesos.  
-2. Identificación de procesos críticos del negocio.  
-3. Construcción de un checklist de cumplimiento normativo.  
-4. Evaluación de cada criterio según niveles de cumplimiento (✅, ⚠️, ❌).  
-5. Identificación de brechas, riesgos y oportunidades de mejora.  
+1. Entrevistas a actores clave:
+   - Encargado técnico (TI)
+   - Responsable del negocio
+   - Personal administrativo  
 
-La información fue estructurada en herramientas como Excel, combinando análisis cualitativo con criterios basados en estándares internacionales.
+2. Revisión de procesos operativos y tecnológicos  
+
+3. Construcción de checklist de cumplimiento por categorías  
+
+4. Evaluación con niveles:
+   - ✅ Cumple  
+   - ⚠️ Parcial  
+   - ❌ No cumple  
+
+5. Identificación de brechas y riesgos  
 
 ---
 
 ## 4. Modelo de evaluación
 
-El modelo propuesto se basa en una evaluación estructurada por categorías:
+Se estructuró el análisis en cinco categorías:
 
-- Datos personales  
 - Seguridad de la información  
-- Gestión de la información  
-- Operación  
-- Cumplimiento normativo  
-
-Cada categoría incluye:
-
-- Criterios de evaluación  
-- Nivel de cumplimiento  
-- Evidencia identificada  
-- Recomendaciones  
-
-Este enfoque permite una visión integral del estado actual del sistema frente a buenas prácticas.
+- Protección de datos personales  
+- Arquitectura tecnológica  
+- Procesos y operación  
+- Cumplimiento y gobierno  
 
 ---
 
 ## 5. Resultados del análisis
 
-### 5.1 Datos personales
+### 5.1 Seguridad de la información
 
-Se identificó que la organización maneja datos de clientes; sin embargo:
+La seguridad está fuertemente controlada por el corporativo:
 
-- No hay evidencia clara de políticas de retención y eliminación  
-- No se documentan mecanismos para garantizar derechos del titular  
-- No existe trazabilidad completa del uso de datos  
+- No se permite el uso de dispositivos externos (USB)  
+- Los accesos están restringidos y controlados  
+- La información es altamente protegida  
 
-Esto representa un riesgo de incumplimiento de la Ley 1581.
+Sin embargo:
 
----
+- No existe gestión visible a nivel local  
+- La documentación de controles no es accesible localmente  
+- La empresa no maneja ISO 27001 como estándar formal  
 
-### 5.2 Seguridad de la información
-
-Se evidenciaron controles básicos, pero con debilidades importantes:
-
-- Gestión de accesos no completamente documentada  
-- Ausencia de políticas formales de seguridad  
-- Dependencia del conocimiento operativo de los usuarios  
+Conclusión:  
+Existe un alto nivel de seguridad operativa, pero con baja visibilidad y control local.
 
 ---
 
-### 5.3 Gestión de la información
+### 5.2 Protección de datos personales
 
-El uso de múltiples herramientas genera:
+Se identificó que:
 
-- Duplicidad de información  
-- Inconsistencias en datos  
-- Falta de centralización  
+- Existe política de tratamiento de datos  
+- Se solicita información mediante formularios de conocimiento del cliente  
+- Se manejan datos biométricos bajo políticas específicas  
+- El acceso a datos está restringido por áreas  
 
-Especialmente por el uso intensivo de Excel en procesos críticos.
+Los datos se almacenan en:
+
+- ERP  
+- Microsoft Dynamics  
+
+Sin embargo:
+
+- No hay evidencia clara de mecanismos para derechos del titular (consulta, modificación, eliminación)  
+- No se identificó un responsable explícito de protección de datos  
+
+Conclusión:  
+Cumplimiento parcial con buenas bases, pero falta formalización.
 
 ---
 
-### 5.4 Operación
+### 5.3 Arquitectura tecnológica
 
-Se identificaron limitaciones operativas como:
+Características principales:
 
-- Procesos manuales en planeación y despacho  
-- Falta de trazabilidad en órdenes  
-- Problemas de visibilidad en tiempo real  
+- Infraestructura basada en Microsoft (Azure y Outlook)  
+- Backups automáticos cada 4 a 6 horas  
+- Información replicada desde dispositivos hacia la nube  
+- Mantenimiento periódico cada 2 semanas  
 
-Esto impacta la eficiencia y control del sistema.
+Gestión:
+
+- Administración desde Estados Unidos  
+- Soporte local limitado (encargado técnico: Julián David Rodríguez)  
+- Posibilidad de soporte externo en casos específicos  
+
+Aspectos positivos:
+
+- No se han presentado pérdidas de información  
+- Alta disponibilidad del sistema  
+- Migraciones exitosas  
+
+Conclusión:  
+Arquitectura sólida y estable, pero altamente dependiente del corporativo.
 
 ---
 
-### 5.5 Cumplimiento normativo
+### 5.4 Procesos y operación
 
-El análisis evidenció:
+Se identificó que:
 
-- Falta de formalización de procesos  
-- Ausencia de documentación estructurada  
-- Dependencia de prácticas informales  
+- Los procesos operativos funcionan correctamente  
+- Se realizan reportes periódicos (semanales y mensuales)  
+- Se hacen revisiones constantes del desempeño  
 
-Lo que dificulta auditorías y control organizacional.
+Sin embargo:
+
+- La documentación no está centralizada  
+- Cada área gestiona su propia documentación  
+- No existe estandarización global  
+
+Conclusión:  
+Procesos funcionales, pero con baja formalización documental.
+
+---
+
+### 5.5 Cumplimiento normativo y gobierno
+
+La organización cumple con múltiples normativas:
+
+- ISO 9001 (calidad)  
+- Seguridad y salud en el trabajo (Resolución 0312)  
+- SARLAFT (prevención de lavado de activos)  
+- Auditorías internas y externas  
+
+Auditorías:
+
+- Revisiones del corporativo  
+- Auditorías externas  
+- Seguimiento de indicadores  
+
+Además:
+
+- Existe validación de terceros  
+- Evaluación de riesgos  
+
+Sin embargo:
+
+- No hay un gobierno de IT local definido  
+- La gestión depende del corporativo  
+- No hay centralización de políticas  
+
+Conclusión:  
+Alto cumplimiento normativo, pero con dependencia estructural externa.
 
 ---
 
 ## 6. Principales brechas identificadas
 
-A partir del análisis, se identificaron las siguientes brechas críticas:
-
-- Dependencia de procesos manuales (Excel)  
-- Falta de trazabilidad en operaciones  
-- Ausencia de políticas de datos personales  
-- Gestión de accesos no formalizada  
-- Falta de centralización documental  
-- Baja integración entre sistemas  
-
-Estas brechas representan riesgos tanto operativos como legales.
+- Dependencia total del corporativo en IT  
+- Falta de autonomía local  
+- Ausencia de documentación centralizada  
+- Baja visibilidad de controles de seguridad  
+- Falta de formalización en gobierno de datos  
+- No claridad en gestión de derechos del titular  
 
 ---
 
-## 7. Supuestos del análisis
+## 7. Fortalezas del sistema
 
-Para el desarrollo del modelo se consideraron los siguientes supuestos:
-
-- El ERP LN es el sistema central, pero no cubre completamente la operación  
-- El uso de Excel introduce riesgos de control y seguridad  
-- No existe un sistema formal de gestión de seguridad de la información  
-- La empresa maneja datos personales, implicando cumplimiento obligatorio  
+- Infraestructura robusta basada en Microsoft  
+- Backups frecuentes y confiables  
+- Alta disponibilidad del sistema  
+- Cumplimiento de múltiples normativas  
+- Auditorías constantes  
+- No hay historial reciente de incidentes críticos  
 
 ---
 
 ## 8. Propuestas de mejora
 
-Se proponen las siguientes acciones:
-
-- Definir políticas de tratamiento de datos personales  
-- Implementar gestión formal de accesos (roles y permisos)  
-- Reducir dependencia de Excel mediante automatización  
+- Definir gobierno de IT a nivel local  
 - Centralizar la documentación organizacional  
-- Implementar trazabilidad completa de procesos  
-- Adoptar un enfoque basado en ISO/IEC 27001  
+- Formalizar gestión de accesos y roles  
+- Establecer responsable de protección de datos  
+- Documentar procesos de seguridad e incidentes  
+- Mejorar visibilidad de controles corporativos  
 
 ---
 
-## 9. Buenas prácticas recomendadas
+## 9. Conclusión
 
-Se recomienda la adopción de:
+El análisis evidencia que Bray Controls Andina cuenta con una base tecnológica sólida, segura y respaldada por el corporativo.
 
-- Sistema de Gestión de Seguridad de la Información (SGSI)  
-- Principio de mínimo privilegio  
-- Auditoría y monitoreo continuo  
-- Gestión de incidentes de seguridad  
-- Mejora continua basada en riesgos  
+No obstante, los principales desafíos no son tecnológicos, sino estructurales:
 
----
+- Dependencia del corporativo  
+- Falta de autonomía local  
+- Limitaciones en documentación y gobierno  
 
-## 10. Conclusión
+La organización no presenta debilidades críticas en infraestructura o seguridad, pero sí oportunidades de mejora en la gestión, control y formalización de procesos.
 
-El análisis permitió identificar que, aunque la organización cuenta con herramientas tecnológicas robustas, presenta debilidades en la gestión, control y formalización de procesos.
-
-Los principales riesgos se concentran en:
-
-- Procesos manuales  
-- Falta de trazabilidad  
-- Gestión de accesos  
-- Cumplimiento normativo  
-
-La implementación de mejoras estructurales permitirá fortalecer la seguridad, optimizar la operación y garantizar el cumplimiento legal, alineando el sistema con estándares internacionales y buenas prácticas.
+El fortalecimiento del gobierno de IT y la documentación permitirá mejorar la eficiencia, trazabilidad y capacidad de respuesta organizacional.
 
 ---
 
-## 11. Referencias
+## 10. Referencias
 
-1. Ley 1581 de 2012 – Protección de Datos Personales (Colombia)  
-2. ISO/IEC 27001 – Information Security Management  
-3. Habeas Data – Marco constitucional colombiano  
-4. OMG. Business Process Model and Notation (BPMN)  
-   https://www.omg.org/spec/BPMN/  
+1. Ley 1581 de 2012 – Protección de Datos Personales  
+2. Habeas Data – Marco constitucional colombiano  
+3. ISO 9001 – Gestión de calidad  
+4. Resolución 0312 – Seguridad y salud en el trabajo  
+5. SARLAFT – Sistema de administración de riesgo LA/FT  
